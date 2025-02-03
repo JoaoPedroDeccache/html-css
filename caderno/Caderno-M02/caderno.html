@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caderno</title>
+    <style>
+        body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+h1{
+    background-color: rgba(230, 220, 17, 0.589);
+    font-size: 190%;
+    text-align: center;
+}
+h1,h2,h3{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+       
+        h2#um{color: red;
+
+        }
+
+        .caixa{
+            color: red;
+        }
+
+        
+    </style>
+
+
+</head>
+<body>
+    <h1>Cap-12</h1>
+    <h2>CSS Estilos Locais / Internos</h2>
+    <ul>
+        <li><abbr title="Colocada no (head)para fazer as alterações no estilo do site">tag(style)</abbr></li>
+        <li><abbr title= "É clocado no (body) para definir a cor de fundo da página">background color:</abbr></li>
+        <li><abbr title="É colocado no (h1,h2,h3,h4,h5,h6) para definir a cor da letra naquele titulo"> color</abbr></li>
+        <li><abbr title="É colocado no (body) para definir a fonte do texto">font family(body)</abbr></li>
+        <li><abbr title="Para definir o tamanho base da fonte em (Px)">font size (body)</abbr></li>
+        <li><abbr title="para definir o tamanho da fonte nos titulos e paragrafos em (Em)">font size (h's e paragrafos)</abbr></li>
+    </ul>
+    <h2>
+        CSS Externo
+    </h2>
+    <p>No (head) criar a tag (link-css)
+        para criar um link externo com a configuração de css pra todas as páginas. Segurar (ctrl) e clicar no link do (href) para criar o link
+    </p>
+    <h2>*@charset "UTF-8"; </h2>
+    <p>para criar uma regra para aceitar acentuação</p>
+    <h1 style="background-color: rgba(255, 255, 40, 0.589);">Cap-13</h1>
+    <h2>Como criar cores</h2>
+    <p><ul>
+        <li>Forma escrita (escrevendo o nome da cr em inglês)</li>
+        <li>Forma hexadecimal (escrevendo o código hexadecimal da cor)</li>
+        <li>Forma RGB (escrevenddo o código rgb da cor)</li>
+        <li>Forma HSL (escrevendo o código hsl da cor)</li>
+    </ul></p>
+    <h2>Site para montar a paleta de cores</h2>
+    <p>Adobe Colors <br>
+        Paletton <br>
+        coolors
+    </p>
+    <h2>Efeito Gradiente</h2>
+    <p>Na parte (head), cria um estilo de CSS para o (body) com as chaves ({}) e adiciona a tag &lt;background-image:linear-gradient &gt;. Dentro da tag definir primeiro a direção do degrade (to right, to top, to left,to bottom), podendo botar valores em graus para definir degrades em quaisquer direções incluido diagonais, e depois inserir as cores presentes no degrade separando-as com virgula.</p>
+    <p>Para definia o tamanho da cor na tela colocar a porcentagem de espaço da tela q ela ocupara antes da virgula. (EX: white 25%, black)</p>
+    <h1>Cap-14</h1>
+   <h2>Nomenclatura das divisoes da letra</h2>:
+    <img src="c:\Users\joaop\Pictures\foto tipografia.png" alt="">
+    <h2>Fonte</h2>
+    <h3>Tipo de fonte</h3>
+    <p>Para alterar o tipo de fonte do site utilizar a tag &lt;font-family&gt;</p>
+    <p>Fontes serifadas como times new roman dificultam a leitura em telas e são mais recomendadas para o papel</p>
+    <p>Fontes sem serifa como Arial confundem a leitura no papel e são recomandadas para a leitura em telas</p>
+    <h3>Tamanho da fonte</h3>
+    <p>Para alterar o tamanho da fonte utilizar a tag &lt;font-size&gt;</p>
+    <p>Medidas absolutas <br>
+        cm, mm, in(polegadas), px, pt, pc
+    </p>
+    <p>Medidas relativas <br>
+    em, ex, rem, vw, vh, %
+    </p>
+    <p>As medidas recomendadas para utilizar em font-size são em e px</p>
+    <p>1 em são 16 px que é o font-size padrão da maiorias dos navegadores</p>
+    <h3>Peso, estilo</h3>
+    <p>Para alterar o peso da fonte utilizar a tag&lt;font-weight&gt;</p>
+    <p>Existem os pesos lineares:lighter, normal ,bold e bolder</p>
+    <p>E também existem os pesos numéricos que vão de 100 a 900</p>
+    <p>Para alterar o estilo da fonte utilizar a tag &lt;font-style&gt;</p>
+    <p>Existem as variações italic e normal</p>
+    <h3>Short hand font</h3>
+    <p>Para diminuir todas as configurações de fonte em apenas uma linha</p>
+    <p>A ordem das configurações são: <br> font-style -> font-weight -> font-size -> font-family</p>
+    <p>Utilizar a tag &lt;font&gt;</p>
+    <h3>Descobrir fontes de sites
+    </h3>
+    <p>Para descobrir as fontes usadas em determinado site utilizar a extenção fonts ninja instalada no crhome</p>
+    <h3>Sites para indentificar fontes de imagens</h3>
+    <p>Whatfontis.com <br>
+       fontsquirrel.com <br>
+       myfonts.com</p>
+       <h3>Alinhamento de texto</h3>
+       <p>Para modificar o alinhamanto dos textos utilizar a tag &lt;text-align&gt;</p>
+       <p>Com as opções:</p>
+       <ul>
+        <li>center</li>
+        <li>left</li>
+        <li>right</li>
+       </ul>
+       <ul>
+        <li>justify para justificar o parágrafo</li>
+       </ul>
+       <h1>Cap-15</h1>
+       <h2>Aula 01/ex 012 - Usando o id</h2>
+       <h3>Seletores</h3>
+       <p>Para aplicar uma configuração de CSS para apenas um elemento utilizar a tag &lt;id&gt; e dar um nome (sem numeros) para identifica-lo</p>
+       <h2 id="um">importante!</h2>
+       <p>Tudo que em HTML é id, em CSS é #</p>
+       <p>Tudo que em HTML é class, em CSS é .</p>
+       <h2>Aula 02/ex 012 - Usando class</h2>
+       <p>Class é usado com a tag &lt;class&gt; para aplicar uma cofiguração para varios elementos, diferente do id que é usado para aplicar uma configuração para apenas um elemento </p>
+       <h2>Aula 03/ex 013 - pseudo-classes</h2>
+       <p>height= altura <br>
+          width= largura</p>
+          <p>Pseudo-classes são representadas por dois pontos (:)</p>
+          <p>&lt;div&gt; é a tag para um texto ocupar toda a linha em que é escrito</p>
+          <p>usando a pseudo-classe hover ao passar o mouse em cima do texto o texto mudará sua forma, como cor, fonte entre outros. Poderá também mostra texto escondidos</p>
+          <h2>Aula 04/ex 013 - pseudo-elementos</h2>
+          <p>Pseudo-elementos são representados por dois pontos duas vezes (::)</p>
+          <p>Servem para botar elementos antes ou depois dos texto sem alterar no HTML</p>
+          <p>EX: a::after, a::before</p>
+          <p>após o comando mostrado acima utilizar a tag &lt;content&gt; para escrever o conteudo que vai estar antes ou depois destes textos</p>
+          <h2>Resumo</h2>
+          # = id <br>
+          . = class <br>
+          : = pseudo-class <br>
+          :: = pseudo-elementos <br>
+          > = children
+          <h1>Cap-16</h1>
+          <h2>Aula 01 - Modelo de Caixas</h2>
+          <h3>Termos de medição das caixas</h3>
+          <p>height = altura <br>
+             width = largura <br>
+             border = borda <br>
+             padding = espaço entre o conteudo e a borda <br>
+             margin = espaço fora da borda <br>
+            outline = contorno fora da borda</p>
+            <h3>Tipos de caixa</h3>
+            <h4>Box level</h4>
+            <p>só começa em novas linhas e ocupa todo o espaço de tela disponivel</p>
+            <h4>Inline level</h4>
+            <p>não provoca quebras de linha e só ocupa o espaço de tela necessario para o conteudo</p>
+            <h4>tags com o tipo box-level</h4>
+            <p>div <br>
+               h1-h6 <br>
+               p <br>
+               main <br>
+               header <br>
+               nav <br>
+               article <br>
+               aside <br>
+               footer <br>
+               form <br>
+               video <br>
+            </p>
+            <h4>tags com o tipo inline-level</h4>
+            <p>span <br>
+               a <br>
+               code <br>
+               small <br>
+               strong <br>
+               em <br>
+               sup-sub <br>
+               label <br>
+               button <br>
+               input <br>
+               select <br>
+               <h2>Aula 02/ex 014 - modelo de caixas na prática (pt.1)
+               </h2>
+               <h3>Configurações de borda</h3>
+               <p>border-width <br>
+                  border-style <br>
+                  border-color</p>
+                  <p class="caixa">Com short-hand: <br>
+                border: width style color <br>
+            EX: border: 10px solid black</p>
+                  <h3>Configurações de padding</h3>
+                  <p>padding-top <br>
+                     padding-right <br>
+                    padding- bottom <br>
+                padding-left</p>
+                <p class="caixa">Com short-hand: <br>
+                padding: top right bottom left <br>
+                EX: padding: 10px 20px 30px 20px</p>
+                <h2>Aula 03/ex 014 - modelo de caixas na prática (pt.2)</h2>
+                <h3>Configurações de margem</h3>
+                <p>Para deixar o elemento no meio da tela usar: <br>
+                     margin:auto</p>
+                     <p class="caixa">Com short-hand: 10px auto 10px auto</p>
+                <p>E para alterar configurações de margem utilizar: <br>
+                margin-top <br>
+                margin-right <br>
+                margin-bottom <br>
+                margin-left <br>
+                <p class="caixa">Com shot-hand: <br>
+                margin: top right bottom left <br>
+                EX: marigin: 10px 10px 10px 10px</p>
+                <h3>Configurações de outline</h3>
+                    
+                outline-style <br>
+                outline-color </p>
+                <p class="caixa">Com short-hand: <br>
+                outline: width style color <br>
+                EX: outline: 10px dashed pink</p>
+                <h2>Aula 04/ex 014 - Grouping Tags</h2>
+                <p>Tags de caixa que são colocadas uma dentro da outra</p>
+                <h2>Aula 05/ex 014 - sombra nas caixas</h2>
+                <p>tag &lt;box-shadow&gt; com configurações básicas de 1px 1px 1px black, com transparencia da metade pra baixo</p>
+                <h2>Aula 06/ex 014 - caixas com vértices arredondados</h2>
+                <p>Para alterar o arredondamento das bordas utilizasse: border-radius</p>
+                <h1>Cap-17</h1>
+                <h2>Aula-6/desafio-010 - Variaveis em CSS</h2>
+                
+                <p>Para adicionar uma variavel usar a pseudo-elemento: <strong>root</strong></p>
+                <p>A estrutura da variavel é formada por: --(nomenclatura atribuda à variavel): (item correspondente à variavel)
+                </p>
+                <h2>Aula-7/desafio-010 - Responsividade para sites</h2>
+                <p>Para fazer um site responsivo é importante alterar os valores de: min-width e max-width, margin , etc.
+                </p>
+                <h2>Aula-12/desafio-010 - vídeo responsivo</h2>
+                <p>Para tornar um vídeo responsivo coloque o video dentro de um <strong>div</strong> </p>
+                <p>após faça as seguintes configurações</p>
+                <p>div.video{
+                    background-color: var(--cor5);
+                    margin: 0px -20px 30px -20px;
+                    padding: 20px;
+                    position: relative;
+                    padding-bottom: 57.5%;
+                }
+                div.video > iframe{
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                width: 90%;
+                height: 90%;
+                }</p>   
+
+               
+
+
+
+
+      
+
+
+
+
+    
+    
+    
+</body>
+</html>
