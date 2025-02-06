@@ -64,5 +64,30 @@ h1,h2,h3{
     <p>Para alterar o posicionamento das imagens no fundo do site é necessário adicionar a tag &lt;background-position&gt;</p>
     <p class="atenção">Lembra que nesta tag primeiro adiciona a coluna vertical (left, center ou right) e depois a coluca horizontal (top, center ou bottom)</p>
     <p class="atenção"><strong>Lembrar de colocar: height: 97vh</strong>.Em html sem conteudo, somente com a imagem de fundo o body irá ficar pequeno e a imagem de fundo desconfigurado.</p>
+    <h2>Aula-05/ex-015 - Mudando o tammanho da imagem de fundo do site</h2>
+    <p>
+    background-size: auto = irá seguir o automatico do navegador <br>
+    background-size: contain = irá ocupar todo o epaço da tela mas irá deformar a imagem <br>
+    background-size: cover = irá ocupar todo o espaço da tela sem deformar mas não exibirá a imagem inteira.
+    </p>
+    <p class="atenção">Prestar atenção no tamanho da view port (height), no background-position e no background-repeat</p>
+
+    <h2>Aula-06/ex-015 - background attachment e short hand</h2>
+    <h3>background-attachment</h3>
+    <p>Para evitar imagens se repetindo é necessário utilizar a tag &lt;background-attachment&gt;. <br>A variavel scroll é utilizada para fazer a imagem do fundo rolar junto com o conteudo da página. <br>
+    A variavel fixed é utilizada para deixar a imagem de fundo fixa e a rolagem acontece apenas no conteudo da página</p>
+    <h3>short hand</h3>
+    <p>Na short hand background é necessário seguir a ordem: background-color > background-image > background-position > background-repeat > background-size > background-attachment</p>
+    <p class="atenção">Na short hand a tag background-size não está funcionando no momento, mas está na regra da w3c.Se ainda não estiver funcionando adicione a short hand sem o background-size e coloque ele separado</p>
+    <h2>Aula-07/ex-015 - Centralização Vertical</h2>
+    <p>Para centralizar uma caixa verticalmente não será utilizando a margin igual utiliza-se para centralizar horizontalmente</p>
+    <p>Primeiramente é necessário adicionar duas caixas, a de fora vai ser o container e a que estiver dentro do container vai ser o conteudo.As caixas devem estar identificadas com id's</p>
+    <p>O container deve conter a tag &lt;position&gt;com a variavel <strong>relative</strong>.O conteudo deve conter a mesma tag mas com a variavel <strong>absolute</strong></p>
+    <p>Com a poosição do conteudo absoluta é possivel adicionar as tag's &lt;left&gt; e &lt;top&gt;, nessas tag's é preciso adicionar valores de <strong>50%</strong> nos dois</p>
+    <p>E por ultimo deve-se adicionar a tag &lt;transform&gt; com a variavel translate com os valores de <strong>(-50%, -50%)</strong></p>
+    <p class="atenção">Esta centralização só vai funcionar se a altura (height) do container estiver na escala vh (view port) </p>
+
+
+
 </body>
 </html>
