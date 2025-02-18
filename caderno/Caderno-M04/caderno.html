@@ -18,6 +18,9 @@ h1,h2,h3{
     font-family: 'Times New Roman', Times, serif;
     
 }
+.atenção{
+    color: red;
+}
     </style>
 </head>
 <body>
@@ -31,5 +34,34 @@ h1,h2,h3{
     <p class="atenção">Adicione um "name" no iframe e no link coloque "target" com este nome</p>
     <h2>Aula04/ex-017 - conteudo no iframe por codigo</h2>
 <p>Para usar html no conteudo do iframe é só trocar o parametro "src" para "srcdoc"</p>
+<h1>Cap-23 - Projeto</h1>
+<p>Capitulo inteiramente para o projeto das redes sociais</p>
+<h1>Cap-24 - Formulários</h1>
+<h2>Aula 01/ex-018 - como criar Formulários</h2>
+<p>Para criar um formuláeio utilizasse a tag &lt;form&gt; &lt;/form&gt;
+<p>Para características de texto como nome e sobrenome é necessário adicionar a tag &lt;input&gt; type=text. Isso fará com que se crie uma caixa de resposta para ser preenchida com as informações pedidas</p>
+<p>Para criar um botão de enviar é necessário adicionar a tag input com type=submit e value=enviar
+</p>
+<h2>Aula 02/ex-018 - utilização de label</h2>
+<p>É importante a utilização de label para fazer uma ligação entre o dado pedido e o campo que vai ser preenchido no formulário</p>
+<p>para isso é só envelopar a palavra antes do campo que deve ser preenchido com a tag &lt;label&gt;</p>
+<h2>Aula 03/ex-018 - GET e POST</h2>
+<p>Método get é usado para dados não sensiveis, como: Nome , Sobrenome, Idade, Altura, Peso, etc...</p>
+<p class="atenção">O método get só suporta até 3000 bytes</p>
+<p>Método post é usado para dados sigilosos, como: senhas, numero de cartão, imagens, etc...
+</p>
+<p class="atenção">O método post não é seguro para esconder os dados, ele apenas tira os dados da url. Para esconder os dados é necessário estudar https e mais para saber sobre essa àrea de criptografia de informações</p>
+<h2>Aula 04/ex-018 - caixas de texto e de senha</h2>
+<p>Para desligar o preenchimento automatico é preciso adicionar dentro da tag form (autocomplete=off)</p>
+<p>Colocar o autocomplete dentro da tag input dará muito mais opções para informar doque aquele campo se trata</p>
+<p class="atenção">para usar o autocomplete dentro da tag input é preciso estar com o autocomplete de dentro da tag form ligado </p>
+<p>dentro da tag form o (action) é para onde os dados do formulário serão mandados</p>
+<p>A tag &lt;input&gt; type=reset servirá para limpar os campos do formulário</p>
+<p>Adicionar required dentro da tag &lt;input&gt; tornará o campo ser de preenchimento obrigatório</p>
+<p>Adicionar minlength e maxlength dentro da tag &lt;input&gt;definirá a quantidade mínia e máxima de carácteres no campo</p>
+<p>Em campos de senhas há 2 autocomplete possiveis: current-password e new-password</p>
+<p>current: para senhas já gravadas no navegador, usado em telas de login por exemplo</p> 
+<p>new: para senhas sendo criadas, em telas de criação de contas por exemplo</p>
+
 </body>
 </html>
