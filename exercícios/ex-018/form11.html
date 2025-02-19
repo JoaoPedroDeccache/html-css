@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário </title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="iimg">Sua foto</label>
+            <input type="file" name="img" id="iimg">
+        </p>
+        <p>
+            <label for="isat">Satisfação</label>
+            <input type="range" name="sat" id="isat" request min="0" max="10" value="7" oninput="ival.innerHTML = Number(isat.value)">
+        </p>
+        <p>
+            <label for="inum">Número de telefone</label>
+            <input type="number" name="num" id="inum">
+        </p>
+        <p>
+            <label for="idata">Data marcada</label>
+            <input type="date" name="data" id="idata">
+        </p>
+        <p>
+            <label for="imes">Mês</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail">
+        </p>
+         <p>
+            <label for="icor">Cor favorita</label>
+            <input type="color" name="cor" id="icor">
+         </p>
+        <p>
+            <fieldset>
+                <legend>Conhecimentos</legend>
+                <label for="iprof"></label>
+                <input type="checkbox" name="con" id="icon"> HTML <br>
+                <input type="checkbox" name="con" id="icon"> CSS <br>
+                <input type="checkbox" name="con" id="icon"> JS <br>
+                <input type="checkbox" name="con" id="icon"> JAVA <br>
+                <input type="checkbox" name="con" id="icon"> C <br>
+                <input type="checkbox" name="con" id="icon"> C++ <br>
+                <input type="checkbox" name="con" id="icon"> PHP <br>
+                <input type="checkbox" name="con" id="icon"> PYTHON
+            </fieldset>
+        </p>
+        <p>
+            <label for="ies">Seu estado</label>
+            <select name="es" id="ies">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value=""> São Paulo</option>
+                <option value=""> Minas Gerais</option>
+                <option value="">Espirito Santo</option>
+                <option value="">Goiaís</option>
+                <option value="">Pernambuco</option>
+                <option value="">Pará</option>
+                <option value="">Rio Grande do Sul</option>
+            </select>
+        </p>
+        <p>
+            <label for="isal">Salário desejado</label>
+            <input type="text" name="sal" id="isal" list="sal">
+            <datalist id="sal"> 
+                <option>R$ 700-1000</option>
+                <option>R$ 1000-1500</option>
+                <option>R$ 1500-2000</option>
+                <option>R$ 2000-3000</option>
+                <option>R$ 3000-5000</option>
+                <option>R$ 5000-7500</option>
+                <option>R$ 7500-10000</option>
+            </datalist>
+        </p>
+        <p>
+            <output id="ival">7</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
