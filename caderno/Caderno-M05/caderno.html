@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        h1{
+            background-color: rgba(230, 220, 17, 0.589);
+            font-size: 190%;
+            text-align: center;
+        }
+        h1,h2,h3{
+            font-family: 'Times New Roman', Times, serif;
+        
+        }
+        .atenção{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cap-27 - Flex Box</h1>
+    <h2>Aula-02/ ex-020/ flex01 - Primeiros passo com flex box</h2>
+    <p>Para utilizar a propriedade do flex box é necessário criar uma div principal com a classe container e outras divs dentro dela com a classe item que vão ser os objetos que serão organizados no flex box.
+    </p>
+    <p>Para a propriedade flex box funcioar é necessário adicionar a tag &lt;display:flex&gt;, na configuração de css da div principal, e adicionar &lt;flex:auto&gt; no css das divs de dentro</p>
+    <h2>Aula-03/ - Direções e eixos com flex box</h2>
+    <p>Para alterar a direção da organização dos objetos dentro do flex box é necessaário adicionar a tag &lt;flex-direction&gt;, pode ser configurda por row (horizontal), row-reverse, column (vertical) e column-reverse</p>
+    <p>main-axis é o eixo principal das flex box e cross axis é o eixo transversal, esses eixo tem dois pontos cada um, no main tem o main-start e o main-end, no cross tem o cross start e o cross end</p>
+    <img src="imagens/eixos.png" alt="">
+    <p>Ao alterar a configuração de direção estes eixos também vao mudar</p>
+    <img src="imagens/Sem título.png" alt="">
+    <h2>Aula-05/ ex-020/ flex02 - empacotamento e fluxo no flex box </h2>
+    <p>O empacotammento é definido pela tag &lt;flex-wrap&gt;, dentro do css do container, que por padrão vem como nowrap e vai diminuir o conteudo dentro do container até onde for possivel, mas também existem as configurações de wrap, que vai redimensionar o conteudo no sentido do eixo transversal e wrap-reverse, que vai redimensionar o conteudo no sentido contrário ao eixo transversal </p>
+    <p>Para simplificar é utilizado o flex-flow que junta as declarações flex-direction e flex-wrap</p>
+    <p>EX: flex-flow: row nowrap;</p>
+    <h2>Aula-04 - Alinhamento nos eixos</h2>
+    <h3>
+        A propriedade justify-content alinha o conteudo em relação ao main-axis
+    </h3>
+    <p>justify-content: flex-start; Alinha o conteudo começando do main start</p>
+    <p>justify-content: flex-end; Alinha o conteudo a partir do main-end</p>
+    <p>justify-content: center; Alinha o conteudo no centro</p>
+    <p>justify-content: space-between; Alinha o primeiro elemento no main-start e o ultimo no main-end, e o espaçamento entre os conteudos do meio será igual</p>
+    <p>justify-content: space-evenly; Coloca o mesmo espaçamento entre os itens</p>
+    <p>justify-content: space-around; Cria sessões dentro da flex box e alinha o conteudo dentro dessas seções </p>
+    <h3>A propriedade align-items alinha o conteudo em relação ao cross-axis</h3>
+    <p>align-items: stretch; estica o conteudo para ocupar toda a altura possivel</p>
+    <p>align-tems: flex-start; Alinha o ocnteudo no começo do cross-axis</p>
+    <p>align-items: flex-end; Alinha o conteudo no final do cross-axis</p>
+    <p>align-items: center; Alinha o conteudo no centro do cross-axis</p>
+    <h2>Aula-06/ - centralização</h2>
+    <p>Para alinhar um conteudo só é preciso adicionar ao container pai justify-content: center; e align-items: center;</p>
+</body>
+</html>
